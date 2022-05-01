@@ -10,6 +10,7 @@ provider "google" {
   project="nachiket-devops"
   region="us-central1"
   zone = "us-central1-a"
+  credentials = "keys.json"
 }
 resource "google_cloud_run_service" "run-app-from-tf" {
   name = "run-app-from-tf-nnk"
